@@ -1,3 +1,4 @@
+
 var oll = 420;
 var z;
 var newLen
@@ -76,7 +77,6 @@ function amar() {
 		amar(3);
 	}
 }
-
 
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
