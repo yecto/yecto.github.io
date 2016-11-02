@@ -40,9 +40,6 @@ function draw() {
 		contador = 1;
 	}
 	pop();
-	push();
-	imagen01();
-	pop();
 	z++;
 }
 
@@ -80,25 +77,6 @@ function amar() {
 	}
 }
 
-function imagen01() {
-
-	img = createGraphics(130, 130);
-	//img.loadPixels();
-	img.background(255);
-
-	/*	
-		for (i = 0; i < img.width; i++) {
-			for (j = 0; j < img.height; j++) {
-				img.set(i, j, color(0, 90, 102, i % img.width * 2));
-			}
-		}
-	*/
-
-	img.updatePixels();
-	//	image(img, 34, 34);
-	image(img01, 17, 20);
-
-}
 
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
