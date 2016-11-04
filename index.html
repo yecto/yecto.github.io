@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>yect</title>
+	<meta name="keywords" content="live coding, Algorave<br />" />
+
+	<script src="libraries/p5.js" type="text/javascript"></script>
+
+	<script src="libraries/p5.dom.js" type="text/javascript"></script>
+	<script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+	<script src="sketch.js" type="text/javascript"></script>
+	<style>
+		body {
+			margin-left: 1px;
+			margin-right: 3rem;
+			margin-bottom: 6rem;
+			background-color: #FCC600;
+			font-weight: 300;
+			color: #343434;
+		}
+		
+		img {
+			z-index: 2;
+			position: fixed;
+			top: 80px;
+			left: 160px;
+			width: 120px;
+			height: auto;
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			transform: translateX(-50%) translateY(-50%);
+		}
+		
+		canvas {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+		
+		#contenu {
+			padding: 44px;
+			margin: -100;
+		}
+		
+		#contenu {
+			position: relative;
+			z-index: 2;
+		}
+		
+		a:link,
+		a:visited {
+			text-decoration: none;
+			color: #000000;
+		}
+		
+		p {
+			font-size: 10px;
+			margin-top: 10px;
+			padding-right: 500px;
+			max-width: 100%;
+			font-family: MikadoRegular;
+			src: url("MikadoRegular.otf");
+			font-weight: normal;
+			line-height: 1rem;
+		}
+		
+		@font-face {}
+		
+		#main {
+			font-family: MikadoRegular;
+		}
+		
+		#author {
+			font-size: 1rem;
+			padding-top: 2rem;
+		}
+		/* #### Mobile Phones Portrait #### */
+		
+		@media screen and (max-device-width: 480px) and (orientation: portrait) {
+			p {
+				font-size: 0.6rem;
+				margin-top: 3rem;
+				font-family: sans-serif;
+				font-weight: normal;
+				line-height: 0.8rem;
+				padding-right: 0.6rem;
+				max-width: 85%;
+			}
+		}
+		/* #### Mobile Phones Landscape #### */
+		
+		@media screen and (max-device-width: 640px) and (orientation: landscape) {
+			p {
+				font-size: 1.2rem;
+				margin-top: 12px;
+				font-family: sans-serif;
+				font-weight: normal;
+				line-height: 10px;
+				padding-right: 0.6rem;
+				max-width: 45%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="contenu">
+		<p style="font-size:66%;">Rodrigo Velasco
+			<br> @_yecto, @_azetsirt.</p>
+		<p style="font-size:68%;">Rodrigo Velasco is a graphic designer, visual artist and live coder based in Montréal, CA. His work explores the interrelations between sound and image by creative audiovisual experiences in the context of live coding. As ‘yecto’ he is live codes audiovisual
+			sets across the world as part of the Algorave scene. His current research investigates the 'Poetics of Live Coding.’ As part of this he organises occasional meetings through 'onfcopoe', an open group that seeks to exploit sensitive and uncertain ways
+			that reflect, express or cross the poetics of live coding.
+			<br>
+			<br> yectocsalev@gmail.com <a href="https://twitter.com/_yecto" target="_blank">@_yecto</a> <a href="yectocsalev@gmail.com" target="_blank">@_onfcopoe</a>
+		</p>
+
+		<p style="font-size:68%;">15/10/16 - algotriste, yecto @ Algorave <a href="http://iclc.livecodenetwork.org/2016/" target="_blank"> ICLC 2016 </a> </p>
+		<p style="font-size:68%;"> I presented 'algotriste' in Hamilton, as part of the last International Conference on Live Coding 2016, algotriste is a live coding audiovisual performance looking forward to create through sad noises, slow, broken and nostalgic Algorave overtones,
+			a continuous <a href="https://www.instagram.com/p/BLoKZ66jYMQ/" target="_blank">vibrant, but dead</a> feeling over the dancefloor.
+		</p>
+
+		<p style="font-size:68%;">15/10/16 yecto - live coding visuals to <a href="https://soundcloud.com/micorex" target="_blank"> Mico Rex</a> @ Algorave ICLC 2016</p>
+		<p style="font-size:68%;"> I shared with the marvelous Mico Rex in the Hammer, so we rode bikes, laugh, drink, eat, sleep, and live code together for 5 days, the last day, the last performance and one of the most amazing I have witnessed was Mico Rex destroying their cardboard
+			boxes on stage.
+		</p>
+
+		<p style="font-size:68%;">12/10/16 - TidalCycles 'birds of a feather' workshop - Mike Hodnick, Scott Fradkin, Alex McLean and Rodrigo Velasco @ ICLC 2016</p>
+		<p style="font-size:68%;"> I had the enormous honour of be part of 'birds of feather' in which I learned a lot from Alex, Scott and Mike, but also had the opportunity to share a talk - demo of <a href="http://toplap.org/s2hs2/" target="_blank"> 's2hs2'</a> that was about an interface
+			between <a href="https://processing.org/download/" target="_blank">Processing</a> and <a href="http://tidalcycles.org/" target="_blank">TidalCycles</a> to live code the behaiviour of previously created visual stuff, I talked about the main paths in
+			my experience (alien alphabets, visual poems, live code visuals and graphic design) also, I invited all the people involved in the workshop to live code through 's2hs2', also you are invited!, click <a href="https://github.com/yecto/s2hs2-TidalCycles-0.8-/blob/master/README_English.md"
+			target="_blank">here.</a>
+		</p>
+
+		<p style="font-size:68%;">14/10/16 - Rodrigo Velasco: Poetics of Live Coding through <a href="http://cargocollective.com/onfcopoe/s2hs2" target="_blank"> s2hs2</a></p>
+		<p style="font-size:68%;"> Very happy I was part of the Session #12: Short Papers chaired by Scott Wilson in the ICLC 2016, I presented some images while I talked about the prehistory of 's2hs2' and the possible futures of it, also I live coded some visual patterns, playing and
+			explaining how s2hs2 is actually working. The focus of the paper is to highlight the origin of the interface, which is strongly linked with poetic doing, and also look at some approaches and/or departures from, I'm exploring and invite those interested
+			to live code it.
+		</p>
+
+		<p style="font-size:68%;">August 2016 - Astr. en <a href="http://www.merma.com.mx/r-i-p" target="_blank">R.I.P.</a> de Editorial Merma</p>
+		<p style="font-size:68%;"> Thanks to Merma crew, specially to 'Mono' who invited me to collaborate in Read In Peace, the new zine of <a href="http://www.merma.com.mx/" target="_blank">Merma Editorial</a>, made in Guadalajara and was intervened by Samia Farah, Biophillick, Inari
+			Reséndiz, Aldo Alvarez Tostado, Rojo Cordova, yecto and Paloma Patlán, printed by El Chino, Dani y Miguel, assembled by m e r m a + Fabi, Ale, Luis, Robe, Mari y Yulis. In words of the crew Astr. became a kind of smallpox for R.I.P.
+		</p>
+
+		<p style="font-size:68%;">October 2016 - Mapping in 'Escuela Superior de Música' as part of <a href="http://semimuticas.org/" target="_blank">SEMIMUTICAS</a></p>
+		<p style="font-size:68%;"> As part of SEMIMUTICAS I collaborated with Karen del Valle and Jaime Lobato to make a mapping in a really nice building of the 'Escuela Superior de Música' in Mexico City. It was really nice we intervened some wall texture photos and write some audioreactive
+			shapes that broke the real wall texture.
+		</p>
+
+
+		<p style="font-size:68%;">September 2016 - yecto - live coding visuals to SNRNG in <a href="https://www.facebook.com/SNRNG/videos/542186025970761/" target="_blank">Format.DF</a></p>
+		<p style="font-size:68%;"> Excited to collaborate with SNRNG and be part of the Format.DF the biggest chiptune festival in Latin America, an independent effort that brings together in one place local and international artists. 8bit music has grown exponentially thanks to 1L8B
+			and Colectivo Chipotle. So, I made a Processing sketch with some audioreactive grids and forms to live code through TidalCycles and interact with SNRNG retro computer obtained trippy soundscapes.
+		</p>
+
+		<p style="font-size:68%;">September 2016 - <a href="http://www.animasivo.net/gifmespace" target="_blank">Taglitch</a></p>
+		<p style="font-size:68%;"> Last September I was selected by Animasivo, to join Gif Me Space, with the idea of taking out the gif of the web, the gifs was projected on the facade of a legendary ex convent, called "Ex Teresa Arte Actual", in the public space of the Historic Center
+			of Mexico City.
+		</p>
+
+		<p style="font-size:68%;">09/09/2016 - yecto @ <a href="http://algorave.com/" target="_blank">Algorave</a> Transpiksel</p>
+		<p style="font-size:68%;"> I performed as yecto, it was special because was organized by Algorave in collaboration with Transpiksel MX, so we invited people to experience an audiovisual free, libre, open source technologies party, it was in Salón Numantina, a really mythic cantina
+			in the south of Mexico City. The lineup was really amazing and composed by mapSide, Maite Cajaraville, Gysle Frøysland, Tito Romero, D1-66.er, dexasismundi, Emilio Ocelotl, Kernel Panic, Eduardo Melendez, etc.
+		</p>
+
+		<p style="font-size:68%;">September 2016 - <a href="https://soundcloud.com/yect/youll-never-find-another-love-like-mine-yect-live-coded-remix" target="_blank">You'll Never Find Another Love Like Mine</a> - yecto live coded remix</p>
+		<p style="font-size:68%;"> I made this remix of Lou Rawls, a tribute to <a href="			 https://soundcloud.com/elamed
+" target="_blank">Elamed</a>, all live coded in TidalCycles.
+		</p>
+
+		<p style="font-size:68%;">27/08/2016 - <a href="https://vimeo.com/182248570" target="_blank">Terrmutare</a> - Salón Abierto</p>
+		<p style="font-size:68%;"> I was part of Salón Abierto, an initiative project to fund artistic works that involves the use of technology in Mexico City, I collaborated with 3 talented and appreciated folks, Malitzin Cortés, Rodrigo Torres and César García, so, we made 'Terrmutare'
+			an installation, that suggests to be derived by those who momentarily inhabit it, I made some <a href="https://www.instagram.com/p/BJg2qxLDmiA/" target="_blank">algorithmic</a> visuals and sounds, synched with proximity sensors placed on 17 doorframes.
+		</p>
+
+		<p style="font-size:68%;">18/08/2016 - yect collaborating with Profe James to live code visuals for URSS Bajo el Árbol @ El Zócalo</p>
+		<p style="font-size:68%;"> Live coding visuals through s2hs2, controlling previously created <a href="https://www.facebook.com/yyeecctt/videos/312513619100820/" target="_blank">illustrations</a> by Profe James, in the main plaza of Mexico City.
+		</p>
+
+		<p style="font-size:68%;">12/08/2016 - <a href="https://vimeo.com/170410106" target="_blank">El Principio</a> - FoeMe</p>
+		<p style="font-size:68%;"> Last year I collaborated with FoeMe to develop some live codeable visuals for his ten anniversary show in Mexico City, this video, is part of the visuals I developed to 'El Principio', then FoeMe invited me to record my visuals and release a <a href="https://vimeo.com/170410106"
+			target="_blank">video</a>. This was an incredible experience, because <a href="https://foeme.bandcamp.com/" target="_blank">FoeMe</a> is one of my favorite DIY local bands.
+		</p>
+
+		<p style="font-size:68%;">08/08/2016 - <a href="https://soundcloud.com/yect/tr-808" target="_blank">TR-808</a></p>
+		<p style="font-size:68%;"> A brief tribute in the middle of the night for the TR-808, all live coded through TidalCycles.
+		</p>
+
+		<p style="font-size:68%;">06/08/2016 - yecto @ <a href="http://algorave.com/" target="_blank">Algorave</a> en El 77</p>
+		<p style="font-size:68%;"> I performed as yecto and organized this Algorave in <a href="https://www.facebook.com/events/1233198763366283/" target="_blank">Mexico</a> City, it was fun and full of a really nice non-live coders and live coders crowd, the line up was amazing, integrated
+			by EHO, Tito Romero, Kernel Panic, MapSphere, yect, CHEMA64, {D1([6, 6].er)}, CNDSD and Black Hole.
+		</p>
+
+		<p style="font-size:68%;"> July 2016 - Mapping to Sony Showroom as part of Interactive.do</p>
+		<p style="font-size:68%;"> I collaborated and learned from the incredible <a href="http://interactivedo.com/" target="_blank">interactive.do</a> crew while I developed an audioreactive and generative mapping, with some videos of MapSide plus algorithms and the kindly support
+			of Eduardo H. Obieta.
+		</p>
+
+		<p style="font-size:68%;"> July 2016 - <a href="https://soundcloud.com/yect/tr-808" target="_blank">azetsirt, yecto</a></p>
+
+		<p style="font-size:68%;">09/07/2016 - yecto @ <a href="http://algorave.com/" target="_blank">Algorave</a> en El Laberinto Cultural Santa María la Ribera</p>
+		<p style="font-size:68%;"> I performed as yecto in this Algorave in <a href="https://www.facebook.com/events/273171749700687/" target="_blank">Mexico</a> City, it was a blast!, and the line up was integrated by RGGTRN, yect, .dm and Furenku.
+		</p>
+
+		<p style="font-size:68%;">10/06/2016 - workshop <a href="https://www.facebook.com/events/195064937554665/" target="_blank">Live coding</a> in TidalCycles, SuperDirt, s2hs2</p>
+		<p style="font-size:68%;"> Had a great time sharing how to setup and live code through TidalCycles at the interactive.do studio in Mexico.
+		</p>
+
+		<p style="font-size:68%;">18/05/2016 - <a href="https://www.instagram.com/p/BFkbGz7F4jz/" target="_blank">ERREOPEO + yecto</a> @ 'EN COMÚN'</p>
+		<p style="font-size:68%;"> Nice experience collaborating with ERREOPEO improvising and crossing our different processes to make some meditative soundscapes.
+		</p>
+
+		<p style="font-size:68%;">October 2015 - live coding visuals for <a href="https://vimeo.com/14268%3755" target="_blank">'Electrofolk'</a> by Tito Romero @ La Habitación del Ruido</p>
+
+		<p style="font-size:68%;">13/07/2015 - vida breve, tristeTren @ <a href="http://iclc.livecodenetwork.org/2015/" target="_blank">ICLC 2015</a></p>
+
+		<p style="font-size:68%;">September 2014 - otú @ Simposio Internacional de Música y Código <a href="https://ottu.bandcamp.com/releases" target="_blank">/* vivo */ 2014</a></p>
+
+		<p style="font-size:68%;">August 2014 - fax + yex, tito ' café, zines y live coding en la <a href="https://cafeleeria.org/" target="_blank">Cafeleería</a></p>
+		<p style="font-size:68%;"> A really enjoyable live coding session, making sounds and visuals with Valerie Faxtar, also Tito Romero presented an old school from the scratch live coding set.
+		</p>
+
+		<p style="font-size:68%;">September 2014 - otú @ Simposio Internacional de Música y Código <a href="https://ottu.bandcamp.com/releases" target="_blank">/* vivo */ 2014</a></p>
+
+		<p style="font-size:68%;">Julio 2011 - <a href="https://vimeo.com/27664247" target="_blank">DVERMEVELA</a>, live coding and digital video by 'cartero sin cartas'</p>
+
+
+	</div>
+	<img src="Untitled-2-01.png">
+
+</body>
+
+</html>
