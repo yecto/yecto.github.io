@@ -12,7 +12,7 @@ function setup() {
 	createCanvas(windowWidth, windowHeight);
 	mic = new p5.AudioIn()
 	mic.start();
-	background(200, 150, 0);
+	background(200, 170, 0);
 }
 
 function draw() {
@@ -22,11 +22,11 @@ function draw() {
 	noStroke();
 	rectMode(CENTER);
 	translate(width / 2, height / 2);
-	fill(200, 150, 0, 2);
+	fill(200, 170, 0, 2);
 	rect(0, 0, 2000, 2000);
 	//rotate(radians(oll / 2));
 	//fill(255, 120);
-	fill(200, 150, 0);
+	fill(200, 170, 0);
 	stroke(100, random(255));
 	translate(random(-202, 102), random(-102, 102));
 	rotate(radians(z / 0.25));
