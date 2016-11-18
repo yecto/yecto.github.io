@@ -5,8 +5,15 @@ var len = 0;
 var mic;
 var crecer = 1;
 var contador = 1;
+var colorcontador = 1;
 var img;
 var img01;
+var t;
+
+
+// padding-right: 400px; 
+// es el que acá en .css
+
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
@@ -16,20 +23,41 @@ function setup() {
 }
 
 function draw() {
+
 	contador++;
+	colorcontador++;
+	
 	micLevel = mic.getLevel();
 	push();
 	noStroke();
+
 	rectMode(CENTER);
 	translate(width / 2, height / 2);
 	fill(255, 188, 3, 0.5);
 	rect(0, 0, 2000, 2000);
-	//rotate(radians(oll / 2));
-	//fill(255, 120);
-	fill(255, 188, 3);
-	stroke(100, random(255));
+
+	strokeCap(SQUARE);
 	translate(random(-202, 102), random(-102, 102));
-	rotate(radians(z / 0.25));
+	rotate(radians(z / 0.75));
+	
+
+	if (colorcontador <= 200) {
+		fill(255, 188, 3);
+		stroke(100);
+	}
+    if (colorcontador >= 201) {
+		fill(100);
+		stroke(255, 188, 3);
+    }
+	if (colorcontador >= 400) {
+		fill(255, 188, 3);
+		stroke(100);
+	}
+	if (colorcontador == 800) {
+		colorcontador = 1;
+	}
+
+
 	if (contador <= 400) {
 		amar();
 	}
@@ -39,16 +67,18 @@ function draw() {
 	if (contador == 800) {
 		contador = 1;
 	}
+
+
 	pop();
 	z++;
+	t++;
 }
 
 function rama() {
 	var len = random(0, 8);
 	translate(-len, -len);
 	rectMode(CENTER);
-	//rect(random(200), map(mouseX, 45, random(80, 60), 0, 2), 0 + micLevel * 6, 2 + micLevel * 120);
-	ellipse(random(600), random(100), 1 + micLevel * 50, 1 + micLevel * 50);
+	ellipse(random(600), random(100), 1 + micLevel * 20, 1 + micLevel * 20);
 	var newLen = len * 0.00005;
 	if (newLen < 0.00005) {
 		return;
@@ -62,18 +92,32 @@ function rama() {
 
 
 function amar() {
-	var len = random(80);
-	translate(-len, -len);
-	scale(0.5 + micLevel * 1.8);
-	//rect(random(200), map(mouseX, 45, random(80, 60), 0, 2), 0 + micLevel * 6, 2 + micLevel * 120);
-	triangle(random(30) + micLevel * 600, random(75) + micLevel * 600, random(58) + micLevel * 600, random(20), random(86) + micLevel * 600, 75 + micLevel * 600);
-	//ellipse(random(600), random(100), 1 + micLevel * 60, 1 + micLevel * 60);
-	var newLen = len * 0.00005;
-	if (newLen < 0.00005) {
+	var len = random(350);
+	translate(-len + 120, -len + 120);
+	scale(0.5 + micLevel * 2);
+	translate(-80, -30)
+	translate(random(600), random(300));
+	strokeWeight(1 + micLevel * 2);
+	//triangle(random(30) + micLevel * 600, random(75) + micLevel * 600, random(58) + micLevel * 600, random(20), random(86) + micLevel * 600, random(75) + micLevel * 600);
+	
+beginShape();
+
+	for (var i = 1; i < 3; i++) {
+		var ang = map(i, random(40), 1, random(20), TWO_PI * 8);
+		//var ang = radians(i);
+		var rad = 240 * noise(i * 0.0005, t * 0.0001);
+		var x = rad * sin(ang);
+		var y = rad * cos(ang);
+		vertex(x, y);
+	}
+	endShape(CLOSE);
+	
+	var newLen = len * 0.005
+	if (newLen < 0.005) {
 		return;
 	} else {
-		rotate(radians(oll * 180.5));
-		amar(3);
+		rotate(radians(oll * 380.5));
+		amar(1);
 	}
 }
 
