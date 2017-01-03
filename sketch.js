@@ -1,3 +1,63 @@
+//var logo;
+var t;
+var transparencia = 0;
+
+
+function setup() {
+	// logo = loadImage("logo.png");
+	createCanvas(windowWidth, windowHeight);
+	noFill();
+	t = 0;
+}
+
+function draw() {
+	background(255, 188, 3);
+	translate(width / 2, height / 2);
+	stroke(76, 61, 114, 70);
+	strokeWeight(0.75);
+	octado();
+	strokeWeight(3);
+	octadot();
+	t += 5;
+	if (frameCount % 4800 === 0) {
+		background(255, 255);
+	}
+}
+
+function octado() {
+	beginShape();
+	for (var i = 0; i < 600; i++) {
+		var ang = radians(i) * map(mouseX, 80, width, 80, 45.5);
+		// 40 
+		//var rad = map(mouseY, 30, 60, 30, 65) * noise(i * sin(0.002), t * 0.0003);
+		var rad = 400 * noise(i * sin(0.002), t * 0.0003);
+		var x = rad * sin(ang);
+		var y = rad * cos(ang);
+		vertex(x * 2.25, y * 2.25);
+	}
+	endShape();
+}
+
+function octadot() {
+	beginShape();
+	for (var i = 0; i < 600; i++) {
+		var ang = radians(i) * map(mouseX, 80, width, 80, 45.5);
+		// 40
+				var rad = 400 * noise(i * sin(0.002), t * 0.0003); 
+		//var rad = map(mouseY, 30, 60, 30, 65) * noise(i * sin(0.002), t * 0.0003);
+		//var rad = map(mouseY, 160, height, 160, 260) * noise(i * sin(0.002), t * 0.0003);
+		var x = rad * sin(ang);
+		var y = rad * cos(ang);
+		point(x * 2.25, y * 2.25);
+	}
+	endShape();
+}
+
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+}
+
+/*
 var oll = 420;
 var z;
 var newLen
@@ -124,3 +184,5 @@ beginShape();
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
 }
+
+*/
