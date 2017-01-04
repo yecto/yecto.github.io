@@ -1,9 +1,11 @@
 //var logo;
 var t;
 var transparencia = 0;
+var contador;
 
 
 function setup() {
+
 	// logo = loadImage("logo.png");
 	createCanvas(windowWidth, windowHeight);
 	noFill();
@@ -11,7 +13,10 @@ function setup() {
 }
 
 function draw() {
+
 	background(255, 188, 3);
+
+
 	translate(width / 2, height / 2);
 	stroke(76, 61, 114, 70);
 	strokeWeight(0.75);
@@ -19,9 +24,7 @@ function draw() {
 	strokeWeight(3);
 	octadot();
 	t += 5;
-	if (frameCount % 4800 === 0) {
-		background(255, 255);
-	}
+
 }
 
 function octado() {
