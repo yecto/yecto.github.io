@@ -26,9 +26,10 @@
 			margin-left: 300px;
 			margin-right: 2rem;
 			background-color: #FFBC03;
+
 			color:  #343434;
 		}
-		
+
 		img {
 			z-index: 1;
 			position: fixed;
@@ -59,10 +60,14 @@
 		}
 		
 
+		sub {
+		background-color: rgba(0,150,255,0.2);
+		}
+
 		a:link,
 		a:visited {
 			text-decoration: none;
-			background-color: rgba(255,0,255,0.2);
+			background-color: rgba(255,0,255,0.25);
 			/*background-color: rgba(255, 255, 255, 1);*/
 			color: #000;
 		}
