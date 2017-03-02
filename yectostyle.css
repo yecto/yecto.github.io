@@ -61,13 +61,21 @@
 		
 
 		sub {
-		background-color: rgba(0,150,255,0.2);
+		background-color: rgba(0,180,200,0.25);
 		}
 
 		a:link,
 		a:visited {
 			text-decoration: none;
-			background-color: rgba(255,0,255,0.25);
+			background-color: rgba(255,201,3,0.65);
+			/*background-color: rgba(255, 255, 255, 1);*/
+			color: #000;
+		}
+
+		a1:link,
+		a1:visited {
+			text-decoration: none;
+			background-color: rgba(255,0,255,0.65);
 			/*background-color: rgba(255, 255, 255, 1);*/
 			color: #000;
 		}
@@ -79,6 +87,12 @@
 			src: url("MikadoRegular.otf");
 			line-height: 0.95rem;
 			font-size: 14px;
+		}
+
+			p2 {
+			z-index: 2;
+			padding-right: 300px; /* este es el que cambia el acá txt */
+			text-align: right;
 		}
 
 		p.small {
