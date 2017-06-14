@@ -1,26 +1,41 @@
 /* va el dropdown */
 
-		.dropdown {
-    		position: relative;
-    		display: inline-block;
-		}
+.dropbtn {
+    background-color: rgba(255, 0, 80, 0.6);
+    color: white;
+    padding: 10px 65px;
+    font-size: 14px;
+    font-family: MikadoRegular;
+	src: url("MikadoRegular.otf");
+    border: none;
+    cursor: pointer;
+}
 
-		.dropdown-content {
-    		display: none;
-    		position: absolute;
-    		background-color: rgba(255,255,255,0);
-			width: 800px;
-    		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
-    		padding: 12px 16px;
-    		z-index: 2;
-    		cursor: crosshair;
-    		color:#fff;
-		}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
-		.dropdown:hover .dropdown-content {
-    		display: block;
-			}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 100, 0, 0.5);
+	width: 575px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
+    padding: 12px 16px;
+    z-index: 20;
+    color:#fff;
+}
 
+.dropdown-content a:hover {background-color: rgba(64, 255, 215, 0.5);}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgba(64, 255, 215, 0.5);
+}
 
 		body {
 			margin-left: 300px;
