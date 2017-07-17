@@ -15,7 +15,7 @@ function setup() {
 function draw() {
 	background(181, 126, 105);
 	translate(width / 2, height / 2);
-	stroke(255, 170, 0, 125);
+	stroke(255, 170, 0, 126);
 	strokeWeight(0.75);
 	octado();
 	strokeWeight(3);
