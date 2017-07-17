@@ -1,0 +1,175 @@
+/* CSS Document */
+
+* {
+margin : 0;
+padding : 0;
+}
+body {
+	font-family: MikadoRegular;
+	src: url("MikadoRegular.otf");
+	font-size : 14px;
+	letter-spacing: 0.7px; 
+}
+
+		a:link,
+		a:visited {
+			text-decoration: none;
+			background-color: rgba(255,201,3,0.65);
+			/*background-color: rgba(255, 255, 255, 1);*/
+			color: #000;
+		}
+
+a:active {
+text-decoration : line-through;
+}
+
+a:hover {
+color : #282828;
+text-decoration : line-through;
+}
+a img {
+border : medium none;
+}
+#menu {
+background: transparent;
+bottom : 0;
+height : 100%;
+text-align : left;
+left : 20px;
+margin-top : 20px;
+overflow : auto;
+position : fixed;
+top : 0;
+width : 230px;
+}
+#menu ul {
+list-style-image : none;
+list-style-position : outside;
+list-style-type : none;
+margin : 0 0 15px;
+}
+#menu ul li.section-title {
+	color : #000000;
+	font-family: MikadoRegular;
+	src: url("MikadoRegular.otf");
+	font-size : 80%;
+	background-color: #ffffff;
+	  letter-spacing: 0.6em; 
+
+}
+
+		canvas {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 0;
+		}
+
+#content {
+	height : 100%;
+	margin : 0 0 0 0;
+	border-top : 21px solid transparent;
+	width: 800px;
+	margin-left: 270px;
+	text-align: left;
+
+}
+
+		#contenu {
+			margin-top: 20px;
+			margin-left: 20px;
+		}
+		
+		#contenu {
+			position: relative;
+			z-index: 2;
+		}
+
+.container {
+margin-top : 20px;
+margin-left : 20px;
+}
+#content p {
+width : 575px;
+margin-top : 10px;
+}
+p {
+text-align: justify;
+}
+h1 {
+font-size : 32px;
+}
+h2 {
+font-size : 24px;
+}
+h3 {
+font-size : 16px;
+}
+h4 {
+font-size : 12px;
+}
+#img-container {
+margin : 0;
+padding : 0;
+}
+#img-container p {
+width : 800px;
+margin : 40;
+padding : 0 0 12px 0;
+}
+#once {
+clear : left;
+}
+#num {
+padding-left : 6px;
+}
+.img-bot {
+margin-bottom : 6px;
+display : block;
+}
+
+sub {
+    background-color: rgba(10,10,10,0.4);
+}
+
+sub1 {
+	background-color: rgba(255,0,170,0.35);
+}
+
+sub2 {
+	background-color: rgba(250,170,0,0.4);
+}
+
+sub3 {
+	background-color: rgba(0,250,219,0.4);
+}
+
+
+		/* #### Mobile Phones Portrait #### */
+		
+		@media screen and (max-device-width: 480px) and (orientation: portrait) {
+			p {
+				font-size: 0.6rem;
+				margin-top: 3rem;
+				font-family: MikadoRegular;
+				src: url("MikadoRegular.otf");
+				font-weight: normal;
+				line-height: 1rem;
+				padding-right: 0.6rem;
+				max-width: 85%;
+			}
+		}
+		/* #### Mobile Phones Landscape #### */
+		
+		@media screen and (max-device-width: 640px) and (orientation: landscape) {
+			p {
+				font-size: 1.2rem;
+				margin-top: 12px;
+				font-family: MikadoRegular;
+				src: url("MikadoRegular.otf");
+				font-weight: normal;
+				line-height: 10px;
+				padding-right: 0.6rem;
+				max-width: 45%;
+			}
+}

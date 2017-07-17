@@ -1,131 +1,135 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
 <head>
-	<meta charset="UTF-8">
-	<title>yecto</title>
-	<meta name="keywords" content="live coding, Algorave<br />" />
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+
+<title>. - / ( ´ ¡ ' ' - ) , / - ∫ º _</title>
+<meta name="keywords" content="live coding, Algorave<br />" />
 	<script src="libraries/p5.js" type="text/javascript"></script>
 	<script src="libraries/p5.dom.js" type="text/javascript"></script>
 	<script src="libraries/p5.sound.js" type="text/javascript"></script>
-	<script src="sketch1.js" type="text/javascript"></script>
-	<link rel="stylesheet" type="text/css" href="yectostyle.css">
+	<script src="sketch.js" type="text/javascript"></script>
+<link rel='stylesheet' href='style.css' type='text/css' />
 
+<style type='text/css'>
+.nothumb { float: left; padding: 0 1px 9px 0;  }
+	.nothumb img { display: block; margin: 0 0 1px 0; }
+	.nothumb strong { display: block; }
+</style>
+
+<script src="jquery.js"></script>
+<script src="cookie.js"></script>
+<script src='espandingMenus.js'></script>
+
+<script type='text/javascript'>
+
+$(document).ready(function() { 
+	setTimeout('move_up()', 1); 
+	expandingMenu(2); 
+	expandingMenu(3); 
+});
+
+</script>
+
+<style type='text/css'>
+body { 			
+; }
+</style>
+<style type="text/css">
+.footer {
+	font-size: 12px;
+}
+</style>
 </head>
 
-<!--
-<section>
-            <section> 
-                <ul>
-                    <li> <a href="#platsprincipaux">Plats Principaux</a> </li>
-                    <li> <a href="#entrees">Entrées</a> </li>
-                    <li> <a href="#desserts">Desserts</a> </li>    
-                </ul> 
-            </section>
--->
+<body class='section-1'>
+<div id='contenu'>
+<div id='menu'>
+<div class='container'>
 
-
-<body>
-<div id="contenu">	
+<p><br />
+</p>
+<ul>
+<li class='section-title'>en curso/current</li>
 <br>
-<p style="font-size:88%;">
-			Rodrigo Velasco	
-			<br><p style="font-size:80%;"> * / - <a href=index.html> casa</a>	- / *</p> 
+<li><a href='r4m4z4.html' onclick="do_click();">R4M4Z4</a></li>
+</ul>
 
-		<p2><p style="font-size:75%;"> # Academic Background</p></p2>
-		<p style="font-size:75%;">Research Stay in the Interdisciplinary Centre for Scientific Research in Music, University of Leeds 
-		<br> <br>
-		Visual Arts Master, Facultad de Artes y Diseño, Universidad Nacional Autónoma de México, UNAM
-		<br> <br>
-		Diploma in Digital Video, Facultad de Artes y Diseño, Universidad Nacional Autónoma de México, UNAM
-		<br> <br>
-		Bachelor in Graphic Design, Universidad Tecnológica de México, UNITEC
-		</p>
+<ul>
+<li class='section-title'>data</li>
+<br>
+<li><a href='index.html' onclick="do_click();">bio / acerca</a></li>
+<li><a href='cv.html' onclick="do_click();">cv / carta de vida</a></li>
+<li><a href='contact.html' onclick="do_click();">contact(o)</a></li>
+</ul>
 
-		<p2><p style="font-size:75%;"> # Laboral Experience</p></p2>
-		<p style="font-size:75%;">
+<ul>
+<li class='section-title'>veería/diseño</li>
+<br>
+<li><a href='iclc2017.html' onclick="do_click();">International Conference on Live Coding 2017 -</a></li>
+<li><a href='algorave.html' onclick="do_click();">Algorave Montréal, La Plante `</a></li>
+<li><a href='popolo.html' onclick="do_click();">Algorave Montréal, Casa del Popolo </a></li>
+<li><a href='entreniebla.html' onclick="do_click();">entreniebla ~</a></li>
+</ul>
 
-		<br><br>
-		Founder, web and graphic designer as part of <a href="http://cargocollective.com/veeria"target="_blank">veería 
-		</a>
-		<br> <br>
-		Creative coder and front end web designer as part of  <a href="http://interactivedo.com/"target="_blank">interactive.do</a>
-		<br> <br>
-		Graphic design professor, Universidad del Valle de México, 
-		<br>UVM imparting Digital Animation, Web Programming, Digital Image 
-		<br> <br>
-		Graphic design professor, Universidad Doctor Emilio Cárdenas, <br>
-		UDEC imparting Multimedia Design, Digital Animation, Artistic Drawing and Illustration
-		<br> <br>
-		Creative director, E-Learning Improve S.C
-		<br> <br>		
-		Multimedia designer, Televisión Educativa, SEP.
-		</p>
+<ul>
+<li class='section-title'>yecto/live coding</li>
+<br>
+<li><a href='metarythmes.html' onclick="do_click();">Metarythmes - </a></li>
+<li><a href='habitacle.html' onclick="do_click();">ELECTROLIVE - Habitacle 01 ´</a></li>
+<li><a href='videojeux.html' onclick="do_click();">musique y ambientes 4 videojeux *</a></li>
+<li><a href='algoritmico.html' onclick="do_click();">Algo Rítmico  ~ </a></li>
+<li><a href='esedos.html' onclick="do_click();">s2hs2</a></li>
+</ul>
 
-		<p2><p style="font-size:75%;"> # Original Contributions</p></p2>
-		<p style="font-size:75%;">
-		‘Metarhythmes’ a series of network meetings between Algorave
-		<br>OBORO and Studio XX conceived by Rodrigo Velasco and Charles Bicari.
-		<br> <br>
-		<a href="http://toplap.org/s2hs2/"target="_blank">s2hs2</a> - Alex McLean + Rodrigo Velasco
-		<br> <br>
-		<a href="http://interactivedo.com/"target="_blank">onfcopoe</a> live coding poetics
-		<br> <br>
-		Algorithmic sounds and visions through live coding since 2011 as <a href="https://yecto.github.io/"target="_blank">yecto</a>
-		<br> <br>
-		<a href="https://ottu.bandcamp.com/album/vivo-2014"target="_blank">otú</a>, Valerie Rejas + Rodrigo Velasco.
-		<br> <br>
-		<a href="https://mil988.github.io/"target="_blank">Mil988</a>, Arturo Waldo + Rodrigo Velasco.
-		</p>
 
-		<p2><p style="font-size:75%;"> # Imparted Workshops</p></p2>
-		<p style="font-size:75%;">TidalCycles 'birds of a feather' workshop - 
-		Mike Hodnick, Scott Fradkin, <br> Alex McLean and Rodrigo Velasco at the <a href="http://iclc.livecodenetwork.org/2016/" target="_blank"> International Conference on Live Coding 2016 </a> 
-		<br> <br>
-		Live Coding en TidalCycles, s2hs2 + SuperDirt at interactive.do	
-		<br> <br>
-		Introducción al Live Coding a través de Tidal - FAM, Universidad Nacional Autónoma de México 
-		</p>
 
-		<p2><p style="font-size:75%;"> # Attended Workshops</p></p2>
-		<p style="font-size:75%;">Music and Functional Reactive Programming in Haskell,<br> <a href="http://iclc.livecodenetwork.org/2016/"target="_blank"> International Conference on Live Coding 2016</a> imparted by Tom Murphy
-		<br> <br>
-		Extramuros, <a href="http://iclc.livecodenetwork.org/2015/"target="_blank"> International Conference on Live Coding 2015</a> imparted by David Ogborn
-		<br> <br>
-		'Strategies for collaboration in Network and Computer Music' imparted by Shelly Knotts 
-		<br> <br>
-		'Música por Computadora' imparted by Hernani Villaseñor
-		<br> <br>
-		'Introducción al Arduino' imparted by Ernesto Romero
-		<br> <br>
-		'Grafía Manual Degenerativa' imparted by Juan Manuel Escalante and Francisco Erazo
-		<br> <br>
-		'Simple Live Coding' - Processing imparted by Juan Manuel Escalante as part of <a href="http://vivo.cmm.cenart.gob.mx/vivo2012/"target="_blank">/* vivo */</a> 
-		<br> <br>
-		Fluxus, Introducción a ambientes de programación en tiempo real, Taller de Audio, Centro Multimedia, CENART
-		</p>
+<!-- you must provide a link to Indexhibit on your site someplace - thank you -->
+<ul>
+<li class="footer"><a href='http://www.indexhibit.org/'> x </a></li>
+</ul>
 
-		<p2><p style="font-size:75%;"> # Skills</p></p2>
-		<p style="font-size:75%;">
-		Languages: Spanish, English, and French (basic)
-	    <br> <br>
-		Software, Languages: Adobe CC, Java, CSS, HTML, Processing, Final Cut, etc.
-		<br> <br>
-		Graphic Design / Computer Art /
-		Creative coding
-		<br> <br>
-		Audiovisual shows / Experiential marketing / 
-		Installation / Music production
-		</p>
+</div>	
+</div>	
 
-		<br><br><br>
-		</body>
+<div id='content'>
+<div id='contenu'>
+<div class='container'>
+
+
+<!-- text and image -->
+<p><strong>CV - Rodrigo Iván Ramírez Velasco</strong></p>
+<br>
+<p><u>Collaborations</u> / 2017 - ‘Metarythmes’ is a series of meetings between  TOPLAP, OBORO and Studio XX, 
+Rodrigo Velasco + Charles Bicari, Montréal / 2015 - Creation of ‘s2hs2’ an interface to live code text, visuals and design, 
+Alex McLean + Rodrigo Velasco, Leeds / 2015 - ‘onfcopoe’ - a group to explore relations between poetics and live coding, 
+Leeds, Mexico, Montréal.</p><br>
+<p><u>Education</u> / 
+2016 - Master in Visual Arts (Digital Art), Facultad de Artes y Diseño, Universidad Nacional Autónoma de México, UNAM / 
+2015 - Research stay in the ‘Interdisciplinary Centre for Scientific Research in Music’, 
+University of Leeds / 2012 - Diploma in Video Digital, Facultad de Artes y Diseño, Universidad Nacional Autónoma de México, UNAM / 2010 - Bachelor of Graphic Design, Universidad Tecnológica de México, UNITEC.</p>
+<br>
+<p><u>Imparted Workshops</u> / 2016 - TidalCycles 'birds of a feather' Workshop - Mike Hodnick, Scott Fradkin, Alex McLean and Rodrigo Velasco at International Conference on Live Coding 2016, McMaster University, Hamilton / 2016 - ‘Live Coding in TidalCycles,
+s2hs2 + SuperDirt’ at interactive.do / 2014 - ‘Live Coding introduction through TidalCycles’ - Facultad de Música, Universidad Nacional Autónoma de México.</p>
+<br>
+<p><u>Experience</u> / 2015 - Founder, web and graphic designer, ‘veería’, Mexico, Montréal, Leeds. / 2016 - Creative coding with Processing and frontend web  for ‘interactive.do’ / 2015 - Web Programming and Digital Design Professor, ‘Universidad del Valle de México’, UVM / 2013 - Graphic and New Media Design Professor, ’Universidad Doctor Emilio Cárdenas’, 
+UDEC / 2014 - Creative Director as part of ‘E-Learning Improve S.C’ / 2011 - Multimedia Designer as part of ‘Televisión Educativa’, Secretaria de Educación Pública.
+</p><br>
+<p><u>Achievements</u> / 2017 - ‘Astr.’  immersive live coding, selected as emergent artist to talk about my work in
+Labsessions #12 organized by la Société des arts technologiques (SAT) in Montréal / 2017 - Visual identity thorugh live coding for ‘ICLC 2017‘ - International Conference on Live Coding, Morelia, Mexique / 2017 - TR-808 in Mixmag - Welcome to the Algorave movement, mixed by Yaxu.
+<br><br>
+<p><u>Espectacles</u> / 2017 - I organized and performed as «yecto», in the two  Algoraves in Montréal, 
+at Casa del Popolo and La Plante / 2016 - «yecto» at Algorave, ICLC 2016 in Hamilton, Canada / 2014 - «otú»  Simposio Internacional de Música y Código /* vivo */ 2014 / 2014 - «otú» at Network Music Festival, Brighton, UK.</p>
+<br><br>
+<p></p>
+<div class='cl'><!-- --></div>
+
+<!-- end text and image -->
+
+</div>
+</div>
+
+</body>
 </html>
-
-<!-- cqam
-chambre blanche
-fonderie darling
-Perte de signal
-turbine
-espacio mexico (peel casi esquina sherbrooke)
--->
