@@ -145,6 +145,11 @@ sub3 {
 }
 
 
+@font-face {
+			font-family: MikadoRegular;
+			src: url("MikadoRegular.otf");
+		}
+
 		/* #### Mobile Phones Portrait #### */
 		
 		@media screen and (max-device-width: 480px) and (orientation: portrait) {
@@ -164,7 +169,6 @@ sub3 {
 		@media screen and (max-device-width: 640px) and (orientation: landscape) {
 			p {
 				font-size: 1.2rem;
-				margin-top: 12px;
 				font-family: MikadoRegular;
 				src: url("MikadoRegular.otf");
 				font-weight: normal;
