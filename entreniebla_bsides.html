@@ -35,8 +35,7 @@ $(document).ready(function() {
 
 <style type='text/css'>
 body { 
-  background-color: #FFD900;      
-; }
+  background-color: #FFF;
 </style>
 <style type="text/css">
 .footer {
@@ -46,9 +45,19 @@ body {
 </head>
 
 <body class='section-1'>
+<div class="w3-content w3-section" style="width:1280px">
+  <img class="mySlides" src="img/enteniebla_risaescalera-02-01.png" style= "width:1280px; height:800px;">
+  <img class="mySlides" src="img/enteniebla_risaescalera-01.png" style= "width:1280px; height:800px;">
+      <img class="mySlides" src="img/enteniebla_lluvia-01.png" style= "width:1280px; height:800px;">
+  <img class="mySlides" src="img/enteniebla_peptido-03-01.png" style= "width:1280px; height:800px;">
+  <img class="mySlides" src="img/enteniebla_absurdayobjetiva-01.png" style= "width:1280px; height:800px;">
+  <img class="mySlides" src="img/enteniebla_graff-01-01.png" style= "width:1280px; height:800px;">
+</div>
+
 <div id='contenu'>
 <div id='menu'>
 <div class='container'>
+
 <p><br />
 </p>
 <ul>
@@ -86,6 +95,7 @@ body {
 </ul>
 
 
+
 <!-- you must provide a link to Indexhibit on your site someplace - thank you -->
 <ul>
 <li class="footer"><a href='http://www.indexhibit.org/'> x </a></li>
@@ -100,33 +110,8 @@ body {
 
 
 <!-- text and image -->
-<p>
-<u>s2hs2</u>
-<br><br>
-<p>
-
-<div class="w3-content w3-section" style="width:575px">
-  <img class="mySlides" src="img/esedos-05-01.png" style="width:100%">
-  <img class="mySlides" src="img/esedos-01-01.png" style="width:100%">
-  <img class="mySlides" src="img/esedos-06-01-01.png" style="width:100%">
-    <img class="mySlides" src="img/esedos-03-01.png" style="width:100%">
-        <img class="mySlides" src="img/esedos-04-01-01.png" style="width:100%">
-                <img class="mySlides" src="img/esedos-02-01.png" style="width:100%">
-                                <img class="mySlides" src="img/esedos-07-01-01.png" style="width:100%">
 
 
-</div>
-</p><br><p>
-‘s2hs2’ is an interface for sharing OSC data between <a href = "https://tidalcycles.org/">TidalCycles</a> and <a href = "https://processing.org/">Processing.</a> A visual form can be assigned to each letter on the computer keyboard, later is possible to live code such letters, modifying their behavior trough Tidal. <br><br> The focus of the previously mentioned interconnection is to live code and improvise visuals and/or text.<br><br>
-- <a href="https://github.com/yecto/s2hs2-TidalCycles-0.8-" target="_blank">. - t ` x , txt / ~ </a>.
-<br><br> I find interesting to decompose and design through live coding, drawing as writing live processess looking to celebrate new accidents.
-
-<br><br> ‘s2hs2’ was written by <a href = "http://slab.org/">Alex McLean</a> and Rodrigo Velasco in January 2015 in the <a href = "http://icsrim.leeds.ac.uk/">ICSRiM</a> of the School of Music at the University of Leeds. ‘s2hs2’ is part of the current Rodrigo’s research at Posgrado en Artes y Diseño of Universidad Nacional Autónoma de México.
-</p>
-<br><br><p style = "font-size:13px"> <i>
-* s2hs2 was included in <a href = "https://github.com/lvm/awesome-livecoding/blob/master/README.md">'All Things Live Coding'</a> a curated list of live coding and tools by Mauro/lvm. You should take a look ( . Eternal grateful with <a href = "https://computerclub.bandcamp.com/album/peak-cut">yaxu</a>.</i><br>
-</p>
-<br><br>
 <script>
 var myIndex = 0;
 carousel();
@@ -140,7 +125,7 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    setTimeout(carousel, 2500); // Change image every 2 seconds
 }
 </script>
 
