@@ -26,11 +26,11 @@ function draw() {
 
 function octado() {
 	beginShape();
-	for (var i = 0; i < 600; i++) {
+	for (var i = 0; i < 800; i++) {
 		var ang = radians(i) * map(mouseX, 80, width, 80, 45.5);
 		// 40 
 		//var rad = map(mouseY, 30, 60, 30, 65) * noise(i * sin(0.002), t * 0.0003);
-		var rad = 400 * noise(i * sin(0.002), t * 0.0003);
+		var rad = 400 * noise(i * sin(0.003), t * 0.002);
 		var x = rad * sin(ang);
 		var y = rad * cos(ang);
 		vertex(x * 2.25, y * 2.25);
@@ -40,10 +40,11 @@ function octado() {
 
 function octadot() {
 	beginShape();
-	for (var i = 0; i < 600; i++) {
+	for (var i = 0; i < 800; i++) {
 		var ang = radians(i) * map(mouseX, 80, width, 80, 45.5);
 		// 40
-				var rad = 400 * noise(i * sin(0.002), t * 0.0003); 
+		var rad = 400 * noise(i * sin(0.002), t * 0.0003);
+				var rad = 400 * noise(i * sin(0.003), t * 0.002); 
 		//var rad = map(mouseY, 30, 60, 30, 65) * noise(i * sin(0.002), t * 0.0003);
 		//var rad = map(mouseY, 160, height, 160, 260) * noise(i * sin(0.002), t * 0.0003);
 		var x = rad * sin(ang);
