@@ -1,5 +1,6 @@
 /* CSS Document */
 
+
 * {
 margin : 0;
 padding : 0;
@@ -149,7 +150,7 @@ sub5 {
 }
 
 sub6 {
-	background-color: rgba(8,0,255, 0.8);
+	background-color: rgba(208,0,255, 0.8);
 }
 
 sub7 {
