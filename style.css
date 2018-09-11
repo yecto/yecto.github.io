@@ -90,6 +90,11 @@ margin : 0 0 15px;
 margin-top : 20px;
 margin-left : 20px;
 }
+#content p8 {
+width : 660px;
+margin-top : 10px;
+}
+
 #content p {
 width : 575px;
 margin-top : 10px;
