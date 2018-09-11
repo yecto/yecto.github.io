@@ -3,7 +3,7 @@ var t = 1;
 var h;
 var g = 1;
 var contador = 0;
-// viaje
+
 function setup() {
 	createCanvas(windowWidth, windowHeight,WEBGL);
 	noFill();
@@ -30,7 +30,7 @@ function drawCylinderAzul() {
 	var sides = ruidoLoco;
 
 	ambientLight(255, 0, 0);
-	ambientMaterial(0, 0, 80, 100);
+	ambientMaterial(20, 0, 50, 80);
 
 	//ambientMaterial(0, 100, 255, 180);
 	var angleIncrement = TWO_PI / sides;
@@ -40,7 +40,7 @@ function drawCylinderAzul() {
 		var angle = map(i, -7, 0, 90, TWO_PI);
 		var rY = 0.0000001;
 		var rrX = 0.0000002;
-		var bR = noise(millis() * rY) * -50;
+		var bR = noise(millis() * rY) * -1200;
 		var tR = noise(millis() * rrX) * 1200;
 		var bottomRadius = bR;
 		var topRadius = tR;
@@ -48,10 +48,10 @@ function drawCylinderAzul() {
 		// - - - - - - - - - - - - - - - - - - - -
 		var ang = map(i, 0, bR / 0.35, 800, PI / tR);
 		var rT = 0.000003;
-		var ruidoTall = noise(millis() * rT) * -mouseX;
+		var ruidoTall = noise(millis() * rT) * 1200;
 		var tall = ruidoTall * cos(ang);
 
-		vertex(topRadius * cos(angle), 0, topRadius * sin(angle));
+		vertex(topRadius * cos(mouseX), 0, topRadius * sin(angle));
 		vertex(bottomRadius * cos(angle), tall, bottomRadius * sin(angle));
 		angle += angleIncrement;
 
@@ -80,7 +80,7 @@ function drawCylinderVerde() {
 		var angle = map(i, -7, 0, 90, TWO_PI);
 		var rY = 0.000000215
 		var rrX = 0.000001;
-		var bR = noise(millis() * rY) * -30;
+		var bR = noise(millis() * rY) * -2800;
 		var tR = noise(millis() * rrX) * 1900;
 		var bottomRadius = bR;
 		var topRadius = tR;
@@ -92,7 +92,7 @@ function drawCylinderVerde() {
 		var tall = ruidoTall * cos(ang);
 
 		vertex(topRadius * cos(angle), 0, topRadius * sin(angle));
-		vertex(bottomRadius * cos(angle), tall, bottomRadius * sin(angle));
+		vertex(bottomRadius * cos(mouseY), tall, bottomRadius * sin(angle));
 		angle += angleIncrement;
 
 	}
@@ -109,7 +109,7 @@ function drawCylinderTrian() {
 	var sides = ruidoLoco;
 
 	ambientLight(255, 255, 255);
-	ambientMaterial(255, 170, 0, 130);
+	ambientMaterial(255, 150, 0, 180);
 
 	//ambientMaterial(0, 100, 255, 180);
 	var angleIncrement = TWO_PI / sides;
@@ -130,7 +130,7 @@ function drawCylinderTrian() {
 		var ruidoTall = noise(millis() * rT) * mouseX;
 		var tall = ruidoTall * cos(ang);
 
-		vertex(topRadius * cos(angle), 0, topRadius * sin(angle));
+		vertex(topRadius * cos(mouseY), 0, topRadius * sin(angle));
 		vertex(bottomRadius * cos(angle), tall, bottomRadius * sin(angle));
 		angle += angleIncrement;
 
