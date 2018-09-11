@@ -3,7 +3,7 @@ var t = 1;
 var h;
 var g = 1;
 var contador = 0;
-
+// viaje
 function setup() {
 	createCanvas(windowWidth, windowHeight,WEBGL);
 	noFill();
