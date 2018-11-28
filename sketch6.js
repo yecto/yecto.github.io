@@ -2,7 +2,10 @@ var n;
 var t = 1;
 var h;
 var g = 1;
-var contador = 0;
+var contador1 = 0;
+var contador = 204;
+var dato = 1;
+
 
 function setup() {
 	createCanvas(windowWidth, windowHeight,WEBGL);
@@ -10,11 +13,29 @@ function setup() {
 }
 
 function draw() {
-	contador++;
-	background(220);
+
+contador1++;
+
+	contador = contador + dato;
+	
+	if (contador <= 204) {
+		dato = 0.05;
+		contador+=0.05;
+	}
+
+
+	if (contador >= 255) {
+		dato = -0.05;
+		contador-=0.05;
+	}
+
+
+    background(204, contador, 240);
+
+
 	var ruidoX = 0.00000000018;
 	var posX = noise(millis() * ruidoX);
-	rotateX(map(360, 0, height, 0, contador / posX / 500));
+	rotateX(map(360, 0, height, 0, contador1 / posX / 500));
 	rotateY(map(800, 0, width, 0, PI));
 	drawCylinderTrian();
 	drawCylinderVerde();

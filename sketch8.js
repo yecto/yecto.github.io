@@ -1,8 +1,8 @@
 //var logo;
 var t;
 var transparencia = 0;
-var contador;
-
+var contador = 204;
+var dato = 1;
 
 function setup() {
 
@@ -14,10 +14,30 @@ function setup() {
 
 function draw() {
 	//background(230, 230, 230);
-		background(204, 218, 240);
+	//    background(204, 218, 240);
+
+	contador = contador + dato;
+	
+	if (contador <= 204) {
+		dato = 0.05;
+		contador+=0.05;
+	}
+
+
+	if (contador >= 255) {
+		dato = -0.05;
+		contador-=0.05;
+	}
+
+
+    background(contador, 218, 240);
+
+
+
+
 
 	translate(width / 2, height / 2);
-	stroke(76, 61, 114, 65);
+	stroke(76, 61, 114, 55);
 	strokeWeight(0.75);
 	octado();
 	strokeWeight(3);
@@ -28,11 +48,11 @@ function draw() {
 
 function octado() {
 	beginShape();
-	for (var i = 0; i < 600; i++) {
+	for (var i = 0; i < 700; i++) {
 		var ang = radians(i) * map(mouseX, 80, width, 80, 45.5);
 		// 40 
 		//var rad = map(mouseY, 30, 60, 30, 65) * noise(i * sin(0.002), t * 0.0003);
-		var rad = 400 * noise(i * sin(0.002), t * 0.0003);
+		var rad = 300 * noise(i * sin(0.002), t * 0.0003);
 		var x = rad * sin(ang);
 		var y = rad * cos(ang);
 		vertex(x * 2.25, y * 2.25);
@@ -42,10 +62,10 @@ function octado() {
 
 function octadot() {
 	beginShape();
-	for (var i = 0; i < 600; i++) {
+	for (var i = 0; i < 700; i++) {
 		var ang = radians(i) * map(mouseX, 80, width, 80, 45.5);
 		// 40
-				var rad = 400 * noise(i * sin(0.002), t * 0.0003); 
+				var rad = 300 * noise(i * sin(0.002), t * 0.0003); 
 		//var rad = map(mouseY, 30, 60, 30, 65) * noise(i * sin(0.002), t * 0.0003);
 		//var rad = map(mouseY, 160, height, 160, 260) * noise(i * sin(0.002), t * 0.0003);
 		var x = rad * sin(ang);
