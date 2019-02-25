@@ -28,9 +28,11 @@ a:hover {
 color : #282828;
 text-decoration : line-through;
 }
+
 a img {
 border : medium none;
 }
+
 #menu {
 background: transparent;
 bottom : 0;
@@ -42,13 +44,16 @@ overflow : auto;
 position : fixed;
 top : 0;
 width : 230px;
+height: 96%;
 }
+
 #menu ul {
 list-style-image : none;
 list-style-position : outside;
 list-style-type : none;
 margin : 0 0 15px;
 }
+
 #menu ul li.section-title {
 	color : #000000;
 	font-family: MikadoRegular;
@@ -82,25 +87,26 @@ margin : 0 0 15px;
 		}
 
 		
-		#contenu {
-			position: relative;
-			z-index: 2;
-			margin-top: 0px;
-			margin-left: 0px;
-		}
+#contenu {
+    position: relative;
+    z-index: 2;
+    margin-top: 0px !important;
+    margin-left: 0px;
+}
 
 .container {
-margin-top : 20px;
-margin-left : 20px;
+margin-top : 24.2px !important;
+margin-left : 0px !important;
 }
+
 #content p8 {
 width : 660px;
 margin-top : 10px;
 }
 
 #content p {
-max-width : 85% !important;
-margin-top : 5%;
+    max-width: 85% !important;
+    margin-top: 0% !important;
 }
 
 p {

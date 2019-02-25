@@ -28,7 +28,7 @@ path = 'http://www.laurabalboa.com/files/gimgs/';
 
 $(document).ready(function() { 
   setTimeout('move_up()', 0.5); 
-  expandingMenu(1); 
+  expandingMenu(2); 
   expandingMenu(3); 
   expandingMenu(4); 
   expandingMenu(5); 
@@ -38,17 +38,56 @@ $(document).ready(function() {
 
 </script>
 
+<!-- A66EA7 -->
 
 <style type='text/css'>
-body { 
-  background-color: #d3f3f8;      
-; }
-</style>
-<style type="text/css">
-.footer {
-  font-size: 12px;
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #4FC5D5, #9954A1);
+  background-size: 200% 100%;
+  -webkit-animation: Gradient 50s ease infinite;
+  -moz-animation: Gradient 50s ease infinite;
+  animation: Gradient 50s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
 }
 </style>
+
 </head>
 
 
@@ -140,25 +179,17 @@ body {
 <div id='content'>
 <div id='contenu'>
 <div class='container'>
-
-<!-- text and image -->
-<p><br><br><br>
-<u>Algorave, Ciudad de México.
-</u>
 <br><br><br>
-<p>
-  <img src="img/algorave_talisman-01-01.png" style="width:760px">
-</p><br><p><br>
-Flyer for the first 2018 Algorave by veería.
-<br>
-</p>
-<p style = "font-size:10px">
-Designed by live coding through 's2hs2' (Processing + TidalCycles) and Scriptographer.js 
+<!-- text and image -->
+<p style = "max-width:575px!important;">
+<u>ELO 2018, Montréal</u>
+<br><br><br>
+
+<iframe width="575" height="320" src="https://www.youtube.com/embed/FicO0T9wxQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br><br>
+alphautre is an ongoing exploration at the crossroads of live coding and electronic literature, I had the opportunity to present a first iteration 'alphautre : maíz' that include drawings by <a href = "https://twitter.com/malditoperrito"target = "_blank">@malditoperrito</a>. The audiovisual set was presented at the BlackBox - Concordia University as part of <a href = "https://sites.grenadine.uqam.ca/sites/nt2/en/elo2018/about" target = "_blank">ELO 2018</a>. This was only possible thanks to the invitation and support of the digital writings laboratory <a href = "http://www.agencetopo.qc.ca/wp/"target = "_blank">'TOPO'</a>. Through their proposal 'Présence Mexicaine à ELO 2018', I did an artist residency in the Mile End before the conference and presented these explorations as an improvised performance through <a href = "https://yecto.github.io/esedos.html"target = "_blank">s2hs2 <</a>
 <br><br>
-<i><br>
-* - Under the influence of 'Algorave Brand Book' by <a href="http://www.dp-creative.co.uk/" target="_blank">DP Creative</a>.</i>
-<br><br><br><br>
-</p>
+
 
 <script>
 var myIndex = 0;

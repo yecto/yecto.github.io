@@ -28,7 +28,7 @@ path = 'http://www.laurabalboa.com/files/gimgs/';
 
 $(document).ready(function() { 
   setTimeout('move_up()', 0.5); 
-  expandingMenu(1); 
+  expandingMenu(2); 
   expandingMenu(3); 
   expandingMenu(4); 
   expandingMenu(5); 
@@ -38,18 +38,58 @@ $(document).ready(function() {
 
 </script>
 
+<!-- A66EA7 -->
 
 <style type='text/css'>
-body { 
-  background-color: #d3f3f8;      
-; }
-</style>
-<style type="text/css">
-.footer {
-  font-size: 12px;
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #8D8E8D, #5F467C);
+  background-size: 200% 100%;
+  -webkit-animation: Gradient 50s ease infinite;
+  -moz-animation: Gradient 50s ease infinite;
+  animation: Gradient 50s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
 }
 </style>
+
 </head>
+
 
 
 
@@ -136,29 +176,19 @@ body {
 </div>  
 </div> 
 
-
 <div id='content'>
 <div id='contenu'>
 <div class='container'>
-
-<!-- text and image -->
-<p><br><br><br>
-<u>Algorave, Ciudad de México.
-</u>
 <br><br><br>
-<p>
-  <img src="img/algorave_talisman-01-01.png" style="width:760px">
-</p><br><p><br>
-Flyer for the first 2018 Algorave by veería.
-<br>
-</p>
-<p style = "font-size:10px">
-Designed by live coding through 's2hs2' (Processing + TidalCycles) and Scriptographer.js 
+<!-- text and image -->
+<p style = "max-width:575px!important;">
+<u>Ocean Sea / La Sotterenea</u>
+<br><br><br>
+<iframe width="575" height="320" src="https://www.youtube.com/embed/JiYOroIdbkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br><br>
+<a href = "mardesombra.bandcamp.com"target = "_blank">Mar de Sombra</a> organized this amazing event where I had such a great experience live coding through <a href = "tidalcycles.org/"target = "_blank">TidalCycles</a> and <a href = "yecto.github.io/esedos.html"target = "_blank">s2hs2</a> at La Sotterenea, the basement of Sala Rossa in Montréal, here's a short video, also recorded by Oscar Coyoli.
 <br><br>
-<i><br>
-* - Under the influence of 'Algorave Brand Book' by <a href="http://www.dp-creative.co.uk/" target="_blank">DP Creative</a>.</i>
-<br><br><br><br>
-</p>
+
 
 <script>
 var myIndex = 0;

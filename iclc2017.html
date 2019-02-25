@@ -15,34 +15,39 @@
 
 <style type='text/css'>
 .nothumb { float: left; padding: 0 1px 9px 0;  }
-	.nothumb img { display: block; margin: 0 0 1px 0; }
-	.nothumb strong { display: block; }
+  .nothumb img { display: block; margin: 0 0 1px 0; }
+  .nothumb strong { display: block; }
 </style>
 
-<script src="jquery.js"></script>
-<script src="cookie.js"></script>
-<script src='espandingMenus.js'></script>
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/cookie.js'></script>
+<script type='text/javascript' src='js/expandingMenus.js'></script>
 
 <script type='text/javascript'>
+path = 'http://www.laurabalboa.com/files/gimgs/';
 
 $(document).ready(function() { 
-	setTimeout('move_up()', 1); 
-	expandingMenu(2); 
-	expandingMenu(3); 
+  setTimeout('move_up()', 0.5); 
+  expandingMenu(1); 
+  expandingMenu(3); 
+  expandingMenu(4); 
+  expandingMenu(5); 
+  expandingMenu(6); 
+
 });
 
 </script>
 
 <style type='text/css'>
 body {
-  width: 100wh;
-  height: 90vh;
+  width: 100%;
+  height: 100%;
   color: #000;
-  background: linear-gradient(90deg, #E5E5E5, #B9AEB8, #F0C9EC);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 25s ease infinite;
-  -moz-animation: Gradient 25s ease infinite;
-  animation: Gradient 25s ease infinite;
+  background: linear-gradient(-180deg, #5CB6BA, #93828A, #E8C8D9);
+  background-size: 100% 100%;
+  -webkit-animation: Gradient 5s ease infinite;
+  -moz-animation: Gradient 5s ease infinite;
+  animation: Gradient 5s ease infinite;
 }
 
 @-webkit-keyframes Gradient {
@@ -82,11 +87,17 @@ body {
 }
 </style>
 <style type="text/css">
+
+body { 
+  background-color: #5CB6BA;       
+}
+
 .footer {
 	font-size: 12px;
 }
 </style>
 </head>
+
 
 
 
@@ -99,47 +110,79 @@ body {
 </p>
 
 <br>
-<ul>
-<li class='section-title'>&ensp;</li>
+
+<!---->
+
+<ul><li class='section-title'><p style = "text-align: left;">&nbsp;  </li>
 <br>
-<li><a href='index.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;bio / acerca&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-<li><sub1><a href='contact.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;contact(o)&nbsp;&nbsp;&nbsp;&nbsp;</a></sub4></li>
-</ul>
-<!--<ul>
-<li class='section-title'>yecto/live coding</li>-->
-<ul>
-<li class='section-title'><p style = "text-align: right;">sound _</li>
-<li><sub1><a href='nva_latinxremix.html' onclick="do_click();"><br>&nbsp;&nbsp;&nbsp;&nbsp;noche en blanco x nva&nbsp;&nbsp;&nbsp;&nbsp;</a></sub4></li>
-<li><a href='metarythmes.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;oboro_migration01&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-<li><sub1><a href='metaritmos.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;metaritmos ´&nbsp;&nbsp;&nbsp;&nbsp;</a></sub4></li>
-<!--<li><a href='videojeux.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;musique y ambientes 4 &nbsp;&nbsp;&nbsp;&nbsp;videojeux *&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-<li><sub1><a href='algoritmico.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;algo rítmico  ~&nbsp;&nbsp;&nbsp;&nbsp;</a></sub4></li>-->
-<li><a href='esedos.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;s2hs2 _&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-<!--<li><sub1><a href='terrmutare.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;terrmutare '&nbsp;&nbsp;&nbsp;&nbsp;</a></sub4></li>-->
-<li><sub1><a href='atelier_easternbloc.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;atelier live coding <br>&nbsp;&nbsp;&nbsp;&nbsp;eastern bloc _ 2017&nbsp;&nbsp;&nbsp;&nbsp;</a></sub1></li>
-<li><a href='livecoding_performances.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp; + performances ´&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+<li><a href='index.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp; ◩ &nbsp;&nbsp;&nbsp;&nbsp;</a></li></ul>
+
+<!---->
+
+<ul><li class='section-title'><p style = "text-align: left;">&nbsp; live coding </li>
+
+<li><sub1><a href='riodejaneiro_impa_19.html' onclick="do_click();"><br>&nbsp;&nbsp;&nbsp; live => coding music, <br> &nbsp;&nbsp;&nbsp; IMPA (Rio de Janeiro)&nbsp;&nbsp;</a></sub4></li>
+
+<li><a href='elo2018_montreal.html' onclick="do_click();">&nbsp;&nbsp;&nbsp; ELO 2018, Montréal &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+
+<li><sub1><a href='oceansea.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;Ocean Sea&nbsp;&nbsp;&nbsp;&nbsp;</a></sub1></li>
+
+<li><a href='nva_latinxremix.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;noche en blanco x nva&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+
+<li><sub1><a href='metarythmes.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;oboro_migration01&nbsp;&nbsp;&nbsp;&nbsp;</a></sub1></li>
+
+<li><a href='atelier_easternbloc.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;atelier live coding <br>&nbsp;&nbsp;&nbsp;&nbsp;eastern bloc _ 2017&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+
+<li><sub1><a href='livecoding_performances.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp; + performances ´&nbsp;&nbsp;&nbsp;&nbsp;</a></sub1>
+</li>
 <br>
-<!--
-<ul>
-<li class='section-title'><sub6><a href='veeria.html' onclick="do_click();">veería/grafías&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</a></li></sub6>-->
-<ul>
-<li class='section-title'><p style = "text-align: right;">graphics _</li>
+<li><a href='esedos.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;s2hs2 &tilde;&nbsp;&nbsp;&nbsp;&nbsp;</a></ul>
+
+
+<!---->
+
+<ul><li class='section-title'><p style = "text-align: left;">&nbsp; graphisme </li>
+  <br>
+
+<li><sub1><a href='signos_vitales_dos.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;signes vitaux _ dos&nbsp;&nbsp;&nbsp;&nbsp;</a></sub1></li>
+
+<li><a href='pcd_montreal_19.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;Processing Community Day, <br>&nbsp;&nbsp;&nbsp;&nbsp;Montréal 2019 `&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+
+<li><sub1><a href='signos_vitales_uno.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;signes vitaux _uno &nbsp;&nbsp;&nbsp;&nbsp;</a></a></li>
+
+<li><a href='iclc2017.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;international conference <br>&nbsp;&nbsp;&nbsp;&nbsp;on live coding 2017 -&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+
+<li><sub1><a href='algorave_laplante.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;algorave montréal, <br>&nbsp;&nbsp;&nbsp;&nbsp;la plante `&nbsp;&nbsp;&nbsp;&nbsp;</a></sub1></li>
+
+<li><a href='algorave_popolo.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;algorave Montréal, <br> &nbsp;&nbsp;&nbsp;&nbsp;casa del popolo&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+
+<li><sub1><a href='algorave_cdmx.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;algorave, <br>&nbsp;&nbsp;&nbsp;&nbsp;ciudad de méxico ´´&nbsp;&nbsp;&nbsp;&nbsp;</a></sub1></li>
+
+</ul>
+
+<!---->
+
+<ul><li class='section-title'><p style = "text-align: left;">&nbsp; resolana &tilde;</li>
 <br>
-<li><a href='unviaje.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;un viaje `&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-<!--<li><sub1><a href='metarythmes_graf.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;metarythmes  graphisme `&nbsp;&nbsp;&nbsp;&nbsp;</a></sub4></li>-->
-<li><sub1><a href='iclc2017.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;international conference &nbsp;&nbsp;&nbsp;&nbsp;on live coding 2017 -&nbsp;&nbsp;&nbsp;&nbsp;</a></sub1></li>
-<li><a href='algorave_laplante.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;algorave montréal, <br>&nbsp;&nbsp;&nbsp;&nbsp;la plante `&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-<li><sub1><a href='algorave_popolo.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;algorave Montréal, <br> &nbsp;&nbsp;&nbsp;&nbsp;casa del popolo&nbsp;&nbsp;&nbsp;&nbsp;</a></sub1></li>
-<li><a href='algorave_cdmx.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;algorave, <br>&nbsp;&nbsp;&nbsp;&nbsp;ciudad de méxico ´´&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-<li><sub1><a href='entreniebla.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;entreniebla ~&nbsp;&nbsp;&nbsp;&nbsp;</a></sub1></li>
-</ul>
-<li class='section-title'>&ensp;</li>
-</ul>
+<li><a href='resolana_catharine_tag.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;typing - tagging &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;w/ Catharine Cary &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li></ul>
+
+<!---->
+
+<ul><li class='section-title'><p style = "text-align: left;">&nbsp; e-lit / non-books </li>
+
+<li><sub1><a href='rip_merma.html' onclick="do_click();"><br>&nbsp;&nbsp;&nbsp; Read In Peace, <br>&nbsp;&nbsp;&nbsp;&nbsp;Merma Editorial &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></sub4></li>
+
+<li><a href='entreniebla.html' onclick="do_click();">&nbsp;&nbsp;&nbsp;&nbsp;entreniebla &nbsp';&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li></ul>
+<!---->
+<!---->
+<ul><li class='section-title'><p style = "text-align: left;">&nbsp; visuales ( ¡ ' ) * </li>
+
+<li><sub1><a href='visuales_hydra.html' onclick="do_click();"><br>&nbsp;&nbsp;&nbsp;&nbsp;hydra &tilde;&nbsp;&nbsp;&nbsp;</a></sub4></li></ul>
+
+
 
 </div>  
 </div> 
-
-
 <div id='content'>
 <div id='contenu'>
 <div class='container'>
@@ -148,6 +191,7 @@ body {
 <!-- text and image -->
 
 <div class="w3-content w3-section" style="width:664px">
+  <br><br><br>
   <img class="mySlides" src="img/iclc_poster_01.png" style="width:100%">
   <img class="mySlides" src="img/iclc_poster_02.png" style="width:100%">
   <img class="mySlides" src="img/iclc_poster_03.png" style="width:100%">
@@ -156,15 +200,15 @@ body {
   <img class="mySlides" src="img/iclc_poster_06.png" style="width:100%">
   <img class="mySlides" src="img/iclc_poster_07.png" style="width:100%">
 </div>
-<br><br><p style = "width:660px">
-The visual identity of the ICLC 2017 is inspired by the live coding community around the world, it is a praise to love, color, repetition and knowledge in the diverse indigenous cultures of Mexico.
+<p style = "min-width:656px">
+  <br>
+The visual identity of the ICLC 2017 is inspired by the live coding community around the world, it is a praise to love, color, repetition and indigenous liveliness.
 <br><br>
 The <u>International Conference on Live Coding 2017</u> was celebrated in Morelia, Mexico. The graphic and web design where created in collaboration with <a href="https://soundcloud.com/felipeignacio-noriega"target="_blank">Felipe Noriega</a> and <a href="https://vimeo.com/microbot25"target="_blank"> Karen del Valle</a>. 
 <br><br>
 We created a live identity, result of processes that involved generative design through live coding. The image is part of an open process that experienced transformations between printed and digital matters in time.  
-<br>
 <br></p><p style = "font-size:12px">
-* Please enter to the <a href="http://iclc.livecodenetwork.org/2017/" target="_blank">ICLC 2017</a> website and refresh your browser repeatedly.
+* <a href="http://iclc.livecodenetwork.org/2017/" target="_blank">ICLC 2017</a> refresh your browser repeatedly.
 <br><br><br><br>
 </p>
 
