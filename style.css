@@ -181,7 +181,7 @@ sub7 {
 		
 		@media screen and (max-device-width: 480px) and (orientation: portrait) {
 			p {
-				font-size: 0.6rem;
+				font-size: 20px;
 				margin-top: 3rem;
 				font-family: MikadoRegular;
 				src: url("MikadoRegular.otf");
@@ -195,7 +195,7 @@ sub7 {
 		
 		@media screen and (max-device-width: 640px) and (orientation: landscape) {
 			p {
-				font-size: 1.2rem;
+				font-size: 20px;
 				font-family: MikadoRegular;
 				src: url("MikadoRegular.otf");
 				font-weight: normal;
