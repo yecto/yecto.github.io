@@ -100,13 +100,35 @@ margin-left : 0px !important;
 }
 
 #content p8 {
-width : 660px;
-margin-top : 10px;
+
+font-size:12px; color:#6b6b6b;     position: absolute;
+    top: 173%;
+    left: 27%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+}
+
+#content p9 {
+
+font-size:12px; color:#000;     position: absolute;
+    top: 373%;
+    left: 57%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
 }
 
 #content p {
-    max-width: 85% !important;
-    margin-top: 0% !important;
+
+    margin-top: 0%;
+    max-width: 500px!important; 
+    /*background: yellow;*/
+    position: absolute;
+    top: 725%;
+    left: 42%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 p {
