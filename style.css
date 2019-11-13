@@ -112,7 +112,7 @@ font-size:12px; color:#6b6b6b;     position: absolute;
 #content p9 {
 
 font-size:12px; color:#000;     position: absolute;
-    top: 373%;
+    top: 123%;
     left: 57%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -125,7 +125,7 @@ font-size:12px; color:#000;     position: absolute;
     max-width: 500px!important; 
     /*background: yellow;*/
     position: absolute;
-    top: 725%;
+    top: 500%;
     left: 42%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
