@@ -125,7 +125,7 @@ font-size:12px; color:#000;     position: absolute;
     max-width: 500px!important; 
     /*background: yellow;*/
     position: absolute;
-    top: 500%;
+    top: 400%;
     left: 42%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
