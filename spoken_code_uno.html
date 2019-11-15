@@ -44,11 +44,11 @@ $(document).ready(function() {
 body {
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #969696, #B26980, #727272);
+  background: linear-gradient(90deg, #FF5601, #75E1ED, #FF5601);
   background-size: 200% 100%;
-  -webkit-animation: Gradient 50s ease infinite;
-  -moz-animation: Gradient 50s ease infinite;
-  animation: Gradient 50s ease infinite;
+  -webkit-animation: Gradient 100s ease infinite;
+  -moz-animation: Gradient 100s ease infinite;
+  animation: Gradient 100s ease infinite;
 }
 
 @-webkit-keyframes Gradient {
@@ -90,7 +90,7 @@ body {
 
 </head>
 
-<body class='section-1'>
+  <body class='section-1'>
     <div id='contenu'>
       <div id='menu'>
         <div class='container'>
@@ -149,25 +149,30 @@ body {
     -->
     </div>
   </div>
+
 <div id='content'>
 <div id='contenu'>
 <div class='container'>
 <br><br><br>
 <!-- text and image -->
-<p_ritmo>
-<u>Metarythmes - migration 01 à OBORO, Montréal.</u>
+<p_spoken>
+<u>spoken code ~ Visualization Studio - Concordia University</u>
 <br><br><br>
-<iframe src="https://player.vimeo.com/video/234099145?color=000" width="575" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<br><br><br>
-'migration 01' was the first jam/meeting of Metarythmes, it took place at <a href = "http://www.oboro.net/fr"> OBORO</a> in Montréal, and we were supported by STUDIO XX, OBORO and TOPLAP. The meeting was sui generis bringing together live improv unexpected materialities by media artists from diverse backgrounds and non conventional approaches.
-<br><br>
-Participants included: 
-<br><br>
-Stephanie Castonguay, Charles Bicari (Vieux Néant), Marije Baalman, Olivier Landry-Gagnon, AVX Lab (BunBun) and Rodrigo Velasco (yecto).
-<br><br><br>
-* * special thanks to Erandy Vergara and Aaron Pollard.
-</p_ritmo>
 
+<div class="w3-content w3-section" style="width:700px">
+    <img class="mySlides" src="img/spkncd2.jpg" style="width:100%">
+  <img class="mySlides" src="img/spkncd4.jpg" style="width:100%">
+    <img class="mySlides" src="img/spkncd1.jpg" style="width:100%">
+        <img class="mySlides" src="img/spkncd6.jpg" style="width:100%">
+          <img class="mySlides" src="img/spkncd7.jpg" style="width:100%">
+</div>
+
+
+<br><br><br>
+An evening of improvised audiovisual live coding organized by <a href = "https://spokenweb.ca" target = "_blank">Spoken Web</a>. <br><br>
+This event approaches code as thought and through this movement, it seeks to create emerging and ephemeral audiovisual relations that unfold in the interplay of code, voice, and language.<br><br>
+Visualization Studio - Room LB-314.00, J.W. McConnell Building (1400 De Maisonneuve Blvd. W.), Sir George Williams Campus
+</p_spoken>
 
 <script>
 var myIndex = 0;
@@ -182,7 +187,7 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    setTimeout(carousel, 6000); // Change image every 2 seconds
 }
 </script>
 
