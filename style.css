@@ -171,6 +171,19 @@ font-size:12px; color:#000;     position: absolute;
 
 }
 
+#content p_sea1 {
+
+    margin-top: 180px;
+    max-width: 575px!important; 
+    position: absolute;
+    top: 400%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+
+}
+
 #content p_nva {
 
     margin-top: -48px;
