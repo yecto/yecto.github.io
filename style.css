@@ -121,7 +121,7 @@ font-size:12px; color:#000;     position: absolute;
 
 #content p_rio {
 
-    margin-top: 292px;
+    margin-top: 298px;
     max-width: 575px!important; 
     position: absolute;
     left: 50%;
@@ -213,6 +213,110 @@ font-size:12px; color:#000;     position: absolute;
 #content p_composite {
 
     margin-top: 214px;
+    max-width: 700px!important; 
+    position: absolute;
+    top: 400%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+
+}
+
+#content p_signes2 {
+
+    margin-top: 448px;
+    max-width: 700px!important; 
+    position: absolute;
+    top: 400%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+
+}
+
+#content p_pcd {
+
+    margin-top: 552px;
+    max-width: 700px!important; 
+    position: absolute;
+    top: 400%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+
+}
+
+#content p_iclc {
+
+    margin-top: 519px;
+    max-width: 700px!important; 
+    position: absolute;
+    top: 400%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+
+}
+
+#content p_algomex1 {
+
+    margin-top: 232px;
+    max-width: 700px!important; 
+    position: absolute;
+    top: 400%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+
+}
+
+#content p_algomtl1 {
+
+    margin-top: 440px;
+    max-width: 700px!important; 
+    position: absolute;
+    top: 400%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+
+}
+
+#content p_algomtl2 {
+
+    margin-top: 430px;
+    max-width: 700px!important; 
+    position: absolute;
+    top: 400%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+
+}
+
+#content p_niebla {
+
+    margin-top: 160px;
+    max-width: 700px!important; 
+    position: absolute;
+    top: 400%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+
+}
+
+#content p_merma {
+
+    margin-top: 250px;
     max-width: 700px!important; 
     position: absolute;
     top: 400%;
