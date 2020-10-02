@@ -219,6 +219,19 @@ font-size:12px; color:#000;     position: absolute;
 
 }
 
+#content p_cerc {
+
+    margin-top: 243px;
+    max-width: 700px!important; 
+    position: absolute;
+    top: 400%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+
+}
+
 #content p_spill {
 
     margin-top: 275px;
@@ -232,6 +245,18 @@ font-size:12px; color:#000;     position: absolute;
 
 }
 
+#content p_nebh {
+
+    margin-top: 409px;
+    max-width: 700px!important; 
+    position: absolute;
+    top: 400%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+
+}
 
 #content p_composite {
 
